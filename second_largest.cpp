@@ -9,6 +9,9 @@ if  (arr.size()  < 2) {
     return -1 ;
 }
 int largest = INT_MIN;
+ int second = INT_MIN;
+ for(int val : arr) {
+     if (val > largest ) {
     
 }
 
