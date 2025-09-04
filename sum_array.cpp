@@ -9,7 +9,7 @@ int sum =0;
     sum += val;
 }
 return sum;
-
+}
 int main() {
     int n; cin >> n;
     vector<int> arr(n);
