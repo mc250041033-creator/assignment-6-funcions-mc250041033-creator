@@ -15,7 +15,11 @@ int largest = INT_MIN;
     second = largest;
          largest = val;
      }
-     else if (val > second && val != largest
+     else if (val > second && val != largest) {
+         second = val ;
+     }
+ }
+    return ( second == INT_MIN) ? -1 : second;
 }
 
 int main() {
