@@ -8,6 +8,7 @@ int secondLargest(const vector<int>& arr) {
 if  (arr.size()  < 2) {
     return -1 ;
 }
+int largest = INT_MIN;
     
 }
 
