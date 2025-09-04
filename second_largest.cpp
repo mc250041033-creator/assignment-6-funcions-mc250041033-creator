@@ -5,7 +5,10 @@ using namespace std;
 
 int secondLargest(const vector<int>& arr) {
     // TODO: complete the function as per instructions
-
+if  (arr.size()  < 2) {
+    return -1 ;
+}
+    
 }
 
 int main() {
