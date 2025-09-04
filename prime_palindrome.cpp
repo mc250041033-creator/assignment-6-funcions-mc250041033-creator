@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 bool isPrime(int n) {
@@ -26,7 +27,7 @@ bool isPalindrome(int n) {
 
 bool primePalindrome(int n) {
     // TODO: complete the function as per instructions
-    return isprime(n) && isPalindrome(n);
+    return isPrime(n) && isPalindrome(n);
 }
 
 int main() {
@@ -34,4 +35,3 @@ int main() {
     cout << (primePalindrome(n) ? 1 : 0) << "\n";
     return 0;
 }
-
