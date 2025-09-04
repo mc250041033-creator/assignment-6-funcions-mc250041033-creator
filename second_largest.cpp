@@ -12,7 +12,10 @@ int largest = INT_MIN;
  int second = INT_MIN;
  for(int val : arr) {
      if (val > largest ) {
-    
+    second = largest;
+         largest = val;
+     }
+     else if (val > second && val != largest
 }
 
 int main() {
