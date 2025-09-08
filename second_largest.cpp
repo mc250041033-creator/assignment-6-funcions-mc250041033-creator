@@ -11,7 +11,8 @@ return -1;
     int largest = INT_MIN;
     int second =  INT_MIN;
     for (int val : arr) {
-        if( val > largest;
+        if( val > largest){
+          second = largest ;
             largest = val;
     }
     else if (val > second && val != largest) {
@@ -19,6 +20,7 @@ return -1;
     }
 }
 return (second == INT_MIN) ? -1 : second;
+}
 
 int main() {
     int n; cin >> n;
@@ -28,4 +30,3 @@ int main() {
     cout << secondLargest(arr) << "\n";
     return 0;
 }
-
