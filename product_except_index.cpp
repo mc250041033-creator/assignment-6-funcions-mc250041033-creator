@@ -7,6 +7,17 @@ vector<long long> productExceptIndex(const vector<int>& arr) {
     vector<long long> output(size, 1);
 
     // TODO: complete the function as per instructions
+    int prefix = 1;
+    for (int i = 0; i < n; i++;) {
+       output[i] = prefix ;
+        prefix *= arr[i];
+    }
+    int suffix = 1 ;
+    for (int i = n - 1; i >= 1; i--) {
+        output[i] *= suffix;
+        suffix *= arr[i];
+    }
+    return output;
     
 }
 
